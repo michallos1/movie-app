@@ -2,27 +2,22 @@ import React from "react"
 import './App.css';
 import MainPage from "./Component/main-index";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link,
 } from "react-router-dom";
+import NavBar from "./Component/NavBar";
 
 function App() {
   return (
-    <div>
-    <nav className="Nav-bar">
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/pogoda-info">Movies</Link></li>
-        <li><Link to="/pogoda-info">Series</Link></li>
-      </ul>
-    </nav>
+    <div className="contener">
+      
+      <NavBar />
 
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      
     </div>
 
   );
@@ -36,5 +31,6 @@ function NotFound() {
     </div>
   );
 }
+
 
 export default App;

@@ -1,0 +1,71 @@
+$colorBack: linear-gradient(0deg, rgba(255,196,0,1) 0%, rgba(255,246,134,1) 100%);
+
+
+
+html, body{
+    height: 100%;
+}
+
+body {
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background: $colorBack;
+}
+
+// .weather-app {
+//     border-radius: 35px;
+//     background-color: rgba(255,255,255,0.45);
+//     padding: 1rem;
+//     position: absolute;
+//     width: 50%;
+//     height: 40%;
+//     top: 15%;
+//     left: 25%;
+// }
+
+// .weather-app-name {
+//     height: 3rem;
+//     text-align: center;
+//     font-size: 2rem;
+// }
+
+// .search-bar > input{
+//     border-radius: 15px;
+//     border: none;
+//     height: 2rem;
+//     width: 16rem;
+//     margin-top: 1rem;
+//     margin-left: calc(50% - 8rem);
+//     margin-bottom: 1rem;
+// }
+
+// .search-bar > input[type="text"]{
+//     padding-left: 0.4rem;
+//     border: none;
+// }
+
+
+// .weather-info {
+//     display: flex;
+//     flex-direction: row;
+//     align-content: center;
+//     align-items: center;
+// }
+
+// .city-name {
+//     margin: 0.1rem;
+//     height: 3rem;
+//     font-size: 1.4rem;
+// }
+
+// .temperature, .hpa, .humidity, .sunrise, .sunset   {
+//     margin: 0.1rem;
+//     height: 2rem;
+// }
+
+// .op1, .op2 {
+//     flex-grow: 1;
+//     padding: 2rem;
+//     /* border-radius: 15px; */
+//     /* background-color: rgba(255,255,255,0.25); */
+// }
