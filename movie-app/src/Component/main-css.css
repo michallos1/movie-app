@@ -1,7 +1,66 @@
-html, body {
-  height: 100%;
-}
-
 body {
   background: linear-gradient(0deg, rgb(255, 196, 0) 0%, rgb(255, 246, 134) 100%);
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-self: center;
+}
+@media (max-width: 860px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 440px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container > .item > div > img {
+  width: 200px;
+}
+
+.container > .item > div {
+  text-align: center;
+}
+
+.main-page {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.main-page > input {
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 2rem;
+  margin: 2rem;
+  box-shadow: 2px 2px 20px 0px rgba(9, 9, 9, 0.23);
+}
+.main-page > input::-moz-placeholder {
+  text-align: center;
+}
+.main-page > input:-ms-input-placeholder {
+  text-align: center;
+}
+.main-page > input::placeholder {
+  text-align: center;
+}
+
+.item {
+  margin-top: 1rem;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+}
+.item .year {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=main-css.css.map */

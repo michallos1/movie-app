@@ -1,71 +1,69 @@
 $colorBack: linear-gradient(0deg, rgba(255,196,0,1) 0%, rgba(255,246,134,1) 100%);
+$colorTitle: rgb(255, 255, 255);
 
 
-
-html, body{
-    height: 100%;
-}
+$phoneWidth: 320px;
+$tabletWidth: 860px;
+$normalWidth: 2200px;
 
 body {
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
     background: $colorBack;
+    min-height: 100vh;
 }
 
-// .weather-app {
-//     border-radius: 35px;
-//     background-color: rgba(255,255,255,0.45);
-//     padding: 1rem;
-//     position: absolute;
-//     width: 50%;
-//     height: 40%;
-//     top: 15%;
-//     left: 25%;
-// }
+.container{
+    // width: auto;
+    // border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: 860px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 440px) {
+        grid-template-columns: 1fr ;
+    }
+    gap: 1rem;
+    justify-self: center;
+}
 
-// .weather-app-name {
-//     height: 3rem;
-//     text-align: center;
-//     font-size: 2rem;
-// }
+.container > .item > div > img{
+    width: 200px;
+}
 
-// .search-bar > input{
-//     border-radius: 15px;
-//     border: none;
-//     height: 2rem;
-//     width: 16rem;
-//     margin-top: 1rem;
-//     margin-left: calc(50% - 8rem);
-//     margin-bottom: 1rem;
-// }
+.container > .item > div {
+    text-align: center;
 
-// .search-bar > input[type="text"]{
-//     padding-left: 0.4rem;
-//     border: none;
-// }
+}
 
+.main-page{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    max-width: 600px;
+}
 
-// .weather-info {
-//     display: flex;
-//     flex-direction: row;
-//     align-content: center;
-//     align-items: center;
-// }
+.main-page > input{
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 2rem;
+    margin: 2rem;
+    box-shadow: 2px 2px 20px 0px rgba(9, 9, 9, 0.23);
+    &::placeholder{
+        text-align: center;
+    }
+    
+}
 
-// .city-name {
-//     margin: 0.1rem;
-//     height: 3rem;
-//     font-size: 1.4rem;
-// }
-
-// .temperature, .hpa, .humidity, .sunrise, .sunset   {
-//     margin: 0.1rem;
-//     height: 2rem;
-// }
-
-// .op1, .op2 {
-//     flex-grow: 1;
-//     padding: 2rem;
-//     /* border-radius: 15px; */
-//     /* background-color: rgba(255,255,255,0.25); */
-// }
+.item{
+    // border: 1px solid black;
+    margin-top: 1rem;
+    width: 200px;
+    background-color: $colorTitle;
+    .year{
+        background-color: black;
+        color: white;
+    }
+}

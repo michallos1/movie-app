@@ -7,10 +7,10 @@ import {
 } from "react-router-dom";
 import NavBar from "./Component/NavBar";
 
+
 function App() {
   return (
     <div className="contener">
-      
       <NavBar />
 
       <Routes>

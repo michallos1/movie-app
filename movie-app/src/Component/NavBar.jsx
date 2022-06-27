@@ -11,6 +11,9 @@ return(
     <div className="Nav-mob" 
           onClick={() => {setMenuOn(!menuOn);}
           }>
+            <span></span>
+            <span></span>
+            <span></span>
       </div>
       <div className={menuOn ? "nav-menu-e" : "nav-menu"}>
       <ul>
