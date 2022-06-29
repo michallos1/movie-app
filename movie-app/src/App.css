@@ -13,105 +13,16 @@ html {
   padding: 0;
   width: 100vw;
   height: 2.5rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-}
-.Nav-bar .nav-menu ul {
   display: flex;
   align-items: center;
   align-content: center;
-  padding: 0;
-  list-style: none;
-  height: 100%;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
-.Nav-bar .nav-menu ul li {
-  list-style: none;
-  text-decoration: none;
+.Nav-bar h2 {
+  margin: 0 auto;
   width: 10rem;
-  height: 2.5rem;
-  background-color: rgb(68, 68, 68);
   text-align: center;
-  display: inline-block;
-}
-.Nav-bar .nav-menu ul li a {
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  color: rgb(255, 255, 255);
-}
-.Nav-bar .nav-menu ul li:hover {
-  background-color: rgba(0, 0, 0, 0.575);
-}
-.Nav-bar .Nav-mob {
-  height: 2.5rem;
-  width: 3rem;
-  border-radius: 10%;
-  background-color: rgb(68, 68, 68);
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  position: absolute;
-  top: 50%;
-  right: 25px;
-  transform: translateY(-50%);
-  display: none;
-}
-.Nav-bar .Nav-mob:hover {
-  background-color: rgba(0, 0, 0, 0.575);
-}
-@media (max-width: 760px) {
-  .Nav-bar .Nav-mob {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    background-color: rgba(0, 0, 0, 0.575);
-  }
-  .Nav-bar .Nav-mob span {
-    width: 80%;
-    height: 3px;
-    display: block;
-    margin-top: 0.5rem;
-    background-color: rgb(255, 255, 255);
-  }
-  .Nav-bar .nav-menu ul {
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: rgb(68, 68, 68);
-    display: none;
-  }
-  .Nav-bar .nav-menu ul li {
-    text-align: center;
-  }
-  .Nav-bar .nav-menu ul li a {
-    width: 100%;
-  }
-  .Nav-bar .nav-menu-e ul {
-    display: block;
-    flex-direction: column;
-    position: absolute;
-    top: 2.5rem;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: rgb(68, 68, 68);
-  }
-  .Nav-bar .nav-menu-e ul li {
-    text-align: center;
-    list-style: none;
-    height: 2.5rem;
-  }
-  .Nav-bar .nav-menu-e ul li a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    color: rgb(255, 255, 255);
-  }
-  .Nav-bar .nav-menu-e ul li:hover {
-    background-color: rgba(0, 0, 0, 0.575);
-  }
+  background: linear-gradient(45deg, #61ff89 0%, #8cc2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=App.css.map */

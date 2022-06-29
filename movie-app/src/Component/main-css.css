@@ -22,6 +22,7 @@ body {
 
 .container > .item > div > img {
   width: 200px;
+  min-height: 300px;
 }
 
 .container > .item > div {
@@ -40,6 +41,7 @@ body {
 .main-page > input {
   border: none;
   border-radius: 10px;
+  text-align: center;
   width: 400px;
   height: 2rem;
   margin: 2rem;
@@ -53,6 +55,11 @@ body {
 }
 .main-page > input::placeholder {
   text-align: center;
+}
+@media (max-width: 440px) {
+  .main-page > input {
+    width: 80vw;
+  }
 }
 
 .item {

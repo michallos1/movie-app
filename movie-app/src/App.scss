@@ -4,11 +4,7 @@ $colorNavLi: rgb(68, 68, 68);
 $colorNav: rgba(0, 0, 0, 0.575);
 $textColorLightColorBackground: rgb(0,0,0);
 $textColorDarkColorBackground: rgb(255, 255, 255);
-
-$phoneWidth: 320px;
-$tabletWidth: 760px;
-$normalWidth: 2200px;
-
+$textColor: linear-gradient(45deg, #61ff89 0%, #8cc2ff 100%);
 
 * {
     padding: 0;
@@ -16,7 +12,6 @@ $normalWidth: 2200px;
   }
   
   html {
-    // height: 100vh;
     background: $colorBack1;
   }
   
@@ -26,120 +21,20 @@ $normalWidth: 2200px;
     padding: 0;
     width: 100vw;
     height: 2.5rem;
-    position: relative;
     display: flex;
     align-items: center;
+    align-content: center;
+    // align-self: center;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-
-    .nav-menu{
-        // margin-left: auto;
-        // height: 100%;
-        ul{
-            display: flex;
-            align-items: center;
-            align-content: center;
-            padding: 0;
-            list-style: none;
-            height: 100%;
-            li{
-                list-style: none;
-                text-decoration: none;
-                width: 10rem;
-                height: 2.5rem;
-                background-color: $colorNavLi;
-                text-align: center;
-                display: inline-block;
-                a{
-                    text-decoration: none;
-                    display: block;
-                    width: 100%;
-                    color: $textColorDarkColorBackground;
-                }
-                &:hover{
-                    background-color: $colorNav;
-                }
-            }
-        }
+    h2{
+        margin: 0 auto;
+        width: 10rem;
+        text-align: center;
+        background: $textColor;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
     }
 
-    .Nav-mob{
-        height: 2.5rem;
-        width: 3rem;
-        border-radius: 10%;
-        background-color: $colorNavLi;
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-        position: absolute;
-        top: 50%;
-        right: 25px;
-        transform: translateY(-50%);
-        display: none;
-        &:hover{
-            background-color: $colorNav;
-        }
-    }
-
-    @media (max-width: $tabletWidth) {
-        .Nav-mob{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            background-color: $colorNav;
-            span{
-                width: 80%;
-                height: 3px;
-                display: block;
-                margin-top: 0.5rem;
-                background-color: $textColorDarkColorBackground;
-            }
-        }
-
-        .nav-menu{
-            ul{
-                flex-direction: column;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: auto;
-                background-color: $colorNavLi;
-                display: none;
-                li{
-                    text-align: center;
-                    // height: 2.5rem;
-                    a{
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        .nav-menu-e ul{
-            display:block;
-            flex-direction: column;
-            position: absolute;
-            top: 2.5rem;
-            left: 0;
-            width: 100%;
-            height: auto;
-            background-color: $colorNavLi;
-            li{
-                text-align: center;
-                list-style: none;
-                height: 2.5rem;
-                a{
-                    text-decoration: none;
-                    display: block;
-                    width: 100%;
-                    color: $textColorDarkColorBackground;
-                   
-                }
-                &:hover{
-                    background-color: $colorNav;
-                }
-            }
-        }
-        
-    }
-  }
+    
    
